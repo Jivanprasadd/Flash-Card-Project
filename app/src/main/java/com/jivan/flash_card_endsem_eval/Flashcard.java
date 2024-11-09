@@ -1,16 +1,20 @@
 package com.jivan.flash_card_endsem_eval;
 
-public class Flashcard {
+import java.io.Serializable;
+
+public class Flashcard implements Serializable {
     private String question;
     private String answer;
-    private boolean isFlipped;
+    private boolean isFlipped;  // To track if the card is flipped
 
+    // Constructor
     public Flashcard(String question, String answer) {
         this.question = question;
         this.answer = answer;
-        this.isFlipped = false;
+        this.isFlipped = false; // Initially, the card is not flipped
     }
 
+    // Getters and Setters
     public String getQuestion() {
         return question;
     }
@@ -31,7 +35,12 @@ public class Flashcard {
         return isFlipped;
     }
 
+    public void setFlipped(boolean flipped) {
+        isFlipped = flipped;
+    }
+
+    // Toggle the flipped state (flip the card)
     public void flip() {
-        isFlipped = !isFlipped;
+        this.isFlipped = !this.isFlipped;
     }
 }

@@ -23,8 +23,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Main Activity -->
         <activity
                 android:name=".MainActivity"
+                android:exported="true" />
+
+        <!-- Flashcard List Activity -->
+        <activity
+                android:name=".Flashcardlist"
+                android:exported="true" />
+
+        <!-- Slider Flashcard Activity -->
+        <activity
+                android:name=".SliderFlashcard"
                 android:exported="true" />
 
     </application>
