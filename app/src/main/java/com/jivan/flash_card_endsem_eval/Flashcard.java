@@ -15,8 +15,16 @@ public class Flashcard {
         return question;
     }
 
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
     public String getAnswer() {
         return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
     public boolean isFlipped() {
